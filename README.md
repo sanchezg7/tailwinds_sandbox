@@ -23,3 +23,6 @@ https://tailwindcss.com/docs/container
 
 width: set for an element
 https://tailwindcss.com/docs/width
+
+### Flex
+https://tailwindcss.com/docs/flex

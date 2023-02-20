@@ -15,3 +15,11 @@ By default, the git push command doesn’t transfer tags to remote servers. You 
 
 $ git push origin --tags  
 Push many tags
+
+## Constructs
+mx-auto: margin on x axis auto
+container is for fixed screen sizes, as opposed to fluid viewports.
+https://tailwindcss.com/docs/container
+
+width: set for an element
+https://tailwindcss.com/docs/width

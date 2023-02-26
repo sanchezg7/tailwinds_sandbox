@@ -5,6 +5,7 @@ import Cards from "./Cards.jsx";
 import SiteBanner from "./SiteBanner.jsx";
 import Locations from "./Locations.jsx";
 import CommissionsBanner from "./CommissionsBanner.jsx";
+import Testimonials from "./Testimonials.jsx";
 
 //mx-auto: keep equal margins on the x axis
 // px-4: padding of 4 on the x axis
@@ -45,7 +46,8 @@ function App() {
             <h2 class="text-3xl text-gray-500 mb-2">Recent Properties</h2>
         </div>
         <Cards />
-          <CommissionsBanner />
+        <CommissionsBanner />
+        <Testimonials />
       </main>
     </>
   )

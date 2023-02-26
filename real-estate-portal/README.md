@@ -26,3 +26,6 @@ https://tailwindcss.com/docs/width
 
 ### Flex
 https://tailwindcss.com/docs/flex
+
+## Icons 
+[Icon Finder](https://www.iconfinder.com/)

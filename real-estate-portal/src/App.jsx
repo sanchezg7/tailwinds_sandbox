@@ -9,8 +9,8 @@ function App() {
               <div>
                   <div>
                       <a href="#">
-                          <img src="" alt="" />
-                              <span>Prime Properties</span>
+                          <img src="src/assets/house.png" alt="" />
+                          <span>Prime Properties</span>
                       </a>
                   </div>
               </div>

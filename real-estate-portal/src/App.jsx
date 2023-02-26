@@ -1,6 +1,7 @@
 import React from "react";
 import './App.css'
 import Banner from "./Banner.jsx";
+import Cards from "./Cards.jsx";
 
 //mx-auto: keep equal margins on the x axis
 // px-4: padding of 4 on the x axis
@@ -36,6 +37,10 @@ function App() {
       </nav>
       <main>
         <Banner />
+        <div className="mt-5 p-10 flex justify-center">
+            <h2 class="text-3xl text-gray-500 mb-2">Recent Properties</h2>
+        </div>
+          <Cards />
       </main>
     </>
   )

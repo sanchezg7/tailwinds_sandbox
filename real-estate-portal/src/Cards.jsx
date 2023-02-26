@@ -56,7 +56,6 @@ const Garcia = () => {
 
 const Epitome = () => {
     return (
-
         <div className="rounded shadow-lg overflow-hidden">
             <img className="w-full" src="src/assets/home3.jpg" alt="" />
             <div className="px-6 pt-4">

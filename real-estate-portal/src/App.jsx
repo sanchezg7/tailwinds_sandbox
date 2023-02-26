@@ -4,11 +4,18 @@ import './App.css'
 function App() {
 
   return (
-      <div className="flex flex-row-reverse bg-yellow-500 w-auto">
-          <div className="h-10 w-10 bg-red-500">1</div>
-          <div className="h-10 w-10 bg-blue-500">2</div>
-          <div className="h-10 w-10 bg-green-500">3</div>
-      </div>
+      <nav className="bg-white shadow-lg">
+          <div>
+              <div>
+                  <div>
+                      <a href="#">
+                          <img src="" alt="" />
+                              <span>Prime Properties</span>
+                      </a>
+                  </div>
+              </div>
+          </div>
+      </nav>
   )
 }
 

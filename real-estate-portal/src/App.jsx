@@ -21,7 +21,7 @@ function App() {
                           <span className="font-semibold text-gray-500 text-lg">Prime Properties</span>
                       </a>
                   </div>
-                  <div className="flex space-x-1">
+                  <div className="hidden md:flex space-x-1">
                       <a href="" className="py-4 px-2 border-green-500 border-b-4 text-green-500 font-semibold">Home</a>
                       <a href="" className="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition duration-200">Service</a>
                       <a href="" className="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition duration-200">About</a>

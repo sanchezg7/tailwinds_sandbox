@@ -16,16 +16,18 @@ function App() {
           <div className="max-w-6xl mx-auto px-4">
               <div className="flex justify-between">
                   <div className="flex space-x-7">
-                      <a href="#" className="flex item-center py-4 px-2">
-                          <img className="h-8 w-8" src="src/assets/house.png" alt="" />
-                          <span className="font-semibold text-gray-500 text-lg">Prime Properties</span>
-                      </a>
-                  </div>
-                  <div className="hidden md:flex space-x-1">
-                      <a href="" className="py-4 px-2 border-green-500 border-b-4 text-green-500 font-semibold">Home</a>
-                      <a href="" className="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition duration-200">Service</a>
-                      <a href="" className="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition duration-200">About</a>
-                      <a href="" className="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition duration-200">Contact</a>
+                      <div>
+                          <a href="#" className="flex items-center py-4 px-2">
+                              <img className="h-8 w-8" src="src/assets/house.png" alt="" />
+                              <span className="font-semibold text-gray-500 text-lg">Prime Properties</span>
+                          </a>
+                      </div>
+                      <div className="hidden md:flex space-x-1 items-center">
+                          <a href="" className="py-4 px-2 border-green-500 border-b-4 text-green-500 font-semibold">Home</a>
+                          <a href="" className="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition duration-200">Services</a>
+                          <a href="" className="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition duration-200">About</a>
+                          <a href="" className="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition duration-200">Contact Us</a>
+                      </div>
                   </div>
               </div>
           </div>

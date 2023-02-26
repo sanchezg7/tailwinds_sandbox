@@ -1,5 +1,6 @@
 import React from "react";
 import './App.css'
+import Banner from "./Banner.jsx";
 
 //mx-auto: keep equal margins on the x axis
 // px-4: padding of 4 on the x axis
@@ -12,6 +13,7 @@ import './App.css'
 function App() {
 
   return (
+      <>
       <nav className="bg-white shadow-lg">
           <div className="max-w-6xl mx-auto px-4">
               <div className="flex justify-between">
@@ -32,6 +34,10 @@ function App() {
               </div>
           </div>
       </nav>
+      <main>
+        <Banner />
+      </main>
+    </>
   )
 }
 

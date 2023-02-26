@@ -14,10 +14,10 @@ const Banner = () => {
                 Pick and choose from 1000+ properties across the globe.
             </p>
             <div className="mt-5 sm:mt-8 sm:flex sm:justify-center">
-                <div>
+                <div className="md:m-2">
                     <a href="" className="flex justify-center rounded-md bg-green-500 text-white px-8 py-3">View Properties</a>
                 </div>
-                <div className="mt-3">
+                <div className="md:m-2">
                     <a href="" className="flex justify-center rounded-md bg-green-100 text-green-700 px-8 py-3">Explore Locations</a>
                 </div>
             </div>

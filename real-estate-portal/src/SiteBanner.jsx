@@ -12,7 +12,7 @@ const SiteBanner = () => {
                 <button className="text-white shadow-lg uppercase border-2 px-8 py-4 font-bold hover:bg-white hover:text-black transition duration-300">Explore Locations</button>
             </div>
         </div>
-    )
+    );
 };
 
 export default SiteBanner;

@@ -1,8 +1,8 @@
 const Footer = () => {
     return (
         <footer className="pt-40 px-4 divide-y space-y-5">
-            <div className="container flex flex-col justify-between mx-auto">
-                <div>
+            <div className="container flex flex-col justify-between mx-auto lg:flex-row lg:space-y-0 space-y-8">
+                <div className="lg:w-1/3">
                     <a href="" className="flex justify-center">
                         <div className="flex w-12 h-12">
                             <img src="src/assets/house.png" alt="house" className="h-8 w-8 mr-2"/>
@@ -12,7 +12,7 @@ const Footer = () => {
                         </span>
                     </a>
                 </div>
-                <div className="grid grid-cols-2 gap-x-3 gap-y-8 text-sm sm:grid-cols-4">
+                <div className="grid grid-cols-2 gap-x-3 gap-y-8 text-sm sm:grid-cols-4 lg:w-2/3">
                     <div className="space-y-3">
                         <h3 className="text-green-500 mb-2 uppercase tracking-wide">Product</h3>
                         <ul className="space-y-1">

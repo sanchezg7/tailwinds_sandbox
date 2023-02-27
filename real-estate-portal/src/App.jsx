@@ -42,6 +42,7 @@ function App() {
           </div>
       </nav>
       <main>
+        <Banner />
         <SiteBanner />
         <Locations />
         <div className="mt-5 p-10 flex justify-center">

@@ -12,7 +12,7 @@ const Footer = () => {
                         </span>
                     </a>
                 </div>
-                <div className="grid grid-cols-2 gap-x-3 gap-y-8 text-sm">
+                <div className="grid grid-cols-2 gap-x-3 gap-y-8 text-sm sm:grid-cols-4">
                     <div className="space-y-3">
                         <h3 className="text-green-500 mb-2 uppercase tracking-wide">Product</h3>
                         <ul className="space-y-1">
@@ -29,9 +29,25 @@ const Footer = () => {
                             <li><a href="">Terms of Service</a></li>
                         </ul>
                     </div>
-                </div>
+                    <div className="space-y-3">
+                        <h3 className="text-green-500 mb-2 uppercase tracking-wide">Developers</h3>
+                        <ul className="space-y-1">
+                            <li><a href="">Public API</a></li>
+                            <li><a href="">Documentation</a></li>
+                            <li><a href="">Guides</a></li>
+                        </ul>
+                    </div>
+                    <div className="space-y-3">
+                        <h3 className="text-green-500 mb-2 uppercase tracking-wide">Social Media</h3>
+                        <div className="flex justify-start">
+                            <a href="">
 
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
+            <div className="text-center text-green-500 text-sm py-6 font-semibold">1968 Company CO. All rights reserved.</div>
         </footer>
         
     );

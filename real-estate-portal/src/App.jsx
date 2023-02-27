@@ -6,6 +6,7 @@ import SiteBanner from "./SiteBanner.jsx";
 import Locations from "./Locations.jsx";
 import CommissionsBanner from "./CommissionsBanner.jsx";
 import Testimonials from "./Testimonials.jsx";
+import ContactUs from "./ContactUs.jsx";
 
 //mx-auto: keep equal margins on the x axis
 // px-4: padding of 4 on the x axis
@@ -48,6 +49,7 @@ function App() {
         <Cards />
         <CommissionsBanner />
         <Testimonials />
+        <ContactUs />
       </main>
     </>
   )

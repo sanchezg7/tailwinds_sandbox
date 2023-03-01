@@ -41,7 +41,7 @@ const navigations = [
 
 const NavBar = () => {
   return (
-    <div className="bg-indigo-900 w-64">
+    <div className="bg-indigo-900 w-64 h-screen">
         <div className="bg-indigo-800">
             <div className="uppercase text-gray-200 p-5 font-bold text-xl">Super Corps</div>
         </div>

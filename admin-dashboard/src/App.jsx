@@ -3,6 +3,7 @@ import './App.css'
 import SideNavBar from "./NavBar.jsx";
 import TopNavBar from "./TopNavBar.jsx";
 import Banner from "./Banner.jsx";
+import Cards from "./Cards.jsx";
 
 // flex-1: grow/shrink according to the width
 function App() {
@@ -14,6 +15,7 @@ function App() {
             <div className="flex-1">
                 <TopNavBar />
                 <Banner />
+                <Cards />
             </div>
         </div>
       </body>

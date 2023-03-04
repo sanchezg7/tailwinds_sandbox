@@ -7,8 +7,10 @@ import {
     Title,
     Tooltip,
     Legend,
+    PointElement,
+    LineElement
 } from 'chart.js';
-import { Bar } from 'react-chartjs-2';
+import { Line, Bar  } from 'react-chartjs-2';
 
 ChartJS.register(
     CategoryScale,
@@ -16,7 +18,9 @@ ChartJS.register(
     BarElement,
     Title,
     Tooltip,
-    Legend
+    Legend,
+    PointElement,
+    LineElement
 );
 
 export const options = {
@@ -38,7 +42,7 @@ export const data = {
     labels,
     datasets: [
         {
-            label: '# of votes',
+            label: 'Number of sales votes',
             data: [12, 19, 3, 5, 2, 3],
             backgroundColor: 'rgba(255, 99, 132, 0.5)',
         }
@@ -53,17 +57,19 @@ const items = [
         subtitle: "sales",
         asset: "src/assets/wallet.png",
         dollarAmt: "$25,647",
-        pctIncrease: "+58%"
+        pctIncrease: "+58%",
+        chart: "Bar"
     },
     {
         title: "super pro",
         subtitle: "sales",
         asset: "src/assets/wallet.png",
-        pctIncrease: "+19%" // should add functionality to make red, eventually
+        pctIncrease: "+19%", // should add functionality to make red, eventually
+        chart: "Line"
     }
 ]
 
-const Card = ({ title, subtitle, asset, dollarAmt, pctIncrease }) => {
+const Card = ({ title, subtitle, asset, dollarAmt, pctIncrease, chart }) => {
   return (
       <div className="card w-1/2 bg-white p-4 m">
           <div><img className="w-10 h-10" src={asset} alt=""/></div>
@@ -72,7 +78,8 @@ const Card = ({ title, subtitle, asset, dollarAmt, pctIncrease }) => {
           <span className="font-bold text-3xl">{dollarAmt}</span>
           {/*badge component*/}
           <span className="bg-green-500 rounded-full text-white text-sm font-bold p-1 align-text-top">{pctIncrease}</span>
-          <Bar options={options} data={data} />;
+          {chart && chart === "Bar" && <Bar options={options} data={data} />};
+          {chart && chart === "Line" && <Line datasetIdKey='asdf' options={options} data={data} />};
       </div>
   );
 };

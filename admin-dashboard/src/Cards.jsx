@@ -1,3 +1,50 @@
+import React from 'react';
+import {
+    Chart as ChartJS,
+    CategoryScale,
+    LinearScale,
+    BarElement,
+    Title,
+    Tooltip,
+    Legend,
+} from 'chart.js';
+import { Bar } from 'react-chartjs-2';
+
+ChartJS.register(
+    CategoryScale,
+    LinearScale,
+    BarElement,
+    Title,
+    Tooltip,
+    Legend
+);
+
+export const options = {
+    responsive: true,
+    plugins: {
+        legend: {
+            position: 'top',
+        },
+        title: {
+            display: true,
+            text: 'Chart.js Bar Chart',
+        },
+    },
+};
+
+const labels = ['January', 'February', 'March', 'April', 'May', 'June', 'July'];
+
+export const data = {
+    labels,
+    datasets: [
+        {
+            label: '# of votes',
+            data: [12, 19, 3, 5, 2, 3],
+            backgroundColor: 'rgba(255, 99, 132, 0.5)',
+        }
+    ],
+};
+
 // overflow-hidden: prevent image to overflow the layout of the card
 
 const items = [
@@ -12,7 +59,7 @@ const items = [
         title: "super pro",
         subtitle: "sales",
         asset: "src/assets/wallet.png",
-        pctIncrease: "-9%"
+        pctIncrease: "+19%" // should add functionality to make red, eventually
     }
 ]
 
@@ -25,6 +72,7 @@ const Card = ({ title, subtitle, asset, dollarAmt, pctIncrease }) => {
           <span className="font-bold text-3xl">{dollarAmt}</span>
           {/*badge component*/}
           <span className="bg-green-500 rounded-full text-white text-sm font-bold p-1 align-text-top">{pctIncrease}</span>
+          <Bar options={options} data={data} />;
       </div>
   );
 };
